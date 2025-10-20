@@ -11,7 +11,7 @@ Além disso, explora conceitos de **programação reativa**, **arquitetura limpa
 
 | Tela Inicial | Tela com Preço Atualizado |
 |---------------|---------------------------|
-| ![bitcoin-zerado.png](https://i.postimg.cc/TwvyX84j/bitcoin-zerado.png) | ![bitcoin-com-preco.png](https://i.postimg.cc/rnKSMNET/bitcoin-com-preco.png) |
+| [![bitcoin-zerado.png](https://i.postimg.cc/TwwyX84j/bitcoin-zerado.png)](https://postimg.cc/946XGkVz) | [![bitcoin-com-preco.png](https://i.postimg.cc/rmKSNtMT/bitcoin-com-preco.png)](https://postimg.cc/cgGgsCvk) |
 
 ---
 
