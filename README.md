@@ -11,7 +11,7 @@ Além disso, explora conceitos de **programação reativa**, **arquitetura limpa
 
 | Tela Inicial | Tela com Preço Atualizado |
 |---------------|---------------------------|
-| [![sem-preco.png](https://i.postimg.cc/fy47BT8f/sem-preco.png)](https://postimg.cc/TL9WPGMK) | [![com-preco.png](https://i.postimg.cc/52PwDmPV/com-preco.png)](https://postimg.cc/21ZbZnRc) |
+| [![sem-preco.png](https://i.postimg.cc/fy47BT8f/sem-preco.png)](https://postimg.cc/TL9WPGMK) | [![finalmente.png](https://i.postimg.cc/vZ7KnCZy/finalmente.png)](https://postimg.cc/w1vF8fN4) |
 
 ---
 
