@@ -34,7 +34,7 @@ class MainActivity : ComponentActivity() {
                         TopAppBar(
                             title = {
                                 Text(
-                                    text = "Monitor de Crypto Moedas - BITCOIN",
+                                    text = "Monitor de BITCOIN",
                                     color = Color.White
                                 )
                             },
