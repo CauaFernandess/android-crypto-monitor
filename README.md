@@ -1,25 +1,43 @@
 # Android crypto monitor
 
-[![bitcoin-zerado.png](https://i.postimg.cc/TwwyX84j/bitcoin-zerado.png)](https://postimg.cc/946XGkVz)
-[![bitcoin-com-preco.png](https://i.postimg.cc/rmKSNtMT/bitcoin-com-preco.png)](https://postimg.cc/cgGgsCvk)
+O **Android Crypto Monitor** é um aplicativo desenvolvido em **Kotlin** que tem como objetivo permitir o acompanhamento em tempo real das principais **criptomoedas** do mercado, como **Bitcoin** e **Ethereum**.
 
-Model 
-O Model é um arquivo Kotlin onde definimos as classes que representam os dados recebidos da API. Quando a resposta da API chega em formato JSON, o Retrofit (biblioteca adicionada no build.gradle) é responsável por converter essa resposta diretamente em objetos Kotlin, evitando o trabalho manual de tratar o JSON.
+O projeto demonstra o uso de **boas práticas de desenvolvimento Android**, consumo de **APIs REST**, e implementação de **interfaces modernas** utilizando os princípios do **Material Design 3**.  
+Além disso, explora conceitos de **programação reativa**, **arquitetura limpa (MVVM)** e **requisições assíncronas** com **Coroutines**.
 
-Neste projeto, temos a classe TickerResponse, que representa toda a resposta da API. Dentro dela, existe o atributo ticker, do tipo Ticker, que corresponde à chave "ticker" no JSON.
+---
 
-A classe Ticker organiza as informações da cotação, como: preço máximo (high), preço mínimo (low), volume (vol), último preço de negociação (last), melhores valores de compra (buy) e venda (sell), além da data (date) em formato de número (Long).
+## 📱 Telas do Aplicativo
 
-Service
-O arquivo Service/MercadoBitcoinService.kt define uma interface Kotlin que descreve a maneira como o aplicativo se comunica com a API para buscar a cotação do Bitcoin. Dentro dessa interface, o método getTicker() é marcado com a anotação @GET("api/BTC/ticker/"), o que indica que será realizada uma requisição GET para esse endpoint específico da API. A função é do tipo suspend, o que permite que seja executada de forma assíncrona utilizando coroutines, sem bloquear a execução principal do aplicativo. O método retorna um objeto do tipo Response<TickerResponse>, possibilitando acessar diretamente os dados da cotação do Bitcoin mapeados no formato definido no projeto.
+| Tela Inicial | Tela com Preço Atualizado |
+|---------------|---------------------------|
+| ![bitcoin-zerado.png](https://i.postimg.cc/TwvyX84j/bitcoin-zerado.png) | ![bitcoin-com-preco.png](https://i.postimg.cc/rnKSMNET/bitcoin-com-preco.png) |
 
-Já o arquivo Service/MercadoBitcoinServiceFactory.kt é responsável por montar a configuração do Retrofit, ferramenta que realiza a comunicação com a API. Através do Retrofit.Builder(), é estabelecido o endereço base da API utilizando o método baseUrl(), que no caso aponta para "https://www.mercadobitcoin.net/". Em seguida, é adicionado o conversor de dados com addConverterFactory(GsonConverterFactory.create()), o que faz com que as respostas em formato JSON sejam automaticamente transformadas em objetos Kotlin usando o Gson. Após todas as configurações, o método build() é chamado para finalizar a criação do objeto Retrofit. Por último, é gerada uma instância da interface MercadoBitcoinService, permitindo que o aplicativo realize chamadas reais para a API utilizando a estrutura configurada.
+---
 
-Ui.theme
-Esta pasta é responsável por armazenar todos os recursos visuais e de configuração utilizados no aplicativo, incluindo layouts de tela, textos, cores e imagens. Dentro dela encontramos:
+## 👥 Membros da Equipe
 
-layout - contém os arquivos de layout no formato .xml
-values - armazena valores reaproveitáveis, como cores, textos e temas
-drawable - utilizado para guardar imagens e formas (shapes)
+- **Cauã Fernandes** – RM551765  
+- **Bruno De Castro Granado** – RM551411  
+
+---
+
+## ⚙️ Tecnologias Utilizadas
+
+- **Kotlin** – linguagem principal do projeto  
+- **Android Studio / Jetpack Compose** – desenvolvimento e interface  
+- **Retrofit** – consumo de APIs REST  
+- **Coroutines** – gerenciamento de tarefas assíncronas  
+- **Material Design 3** – design moderno e responsivo  
+- **API CoinGecko** – obtenção de dados de criptomoedas em tempo real  
+
+---
+
+## 🚀 Como Executar o Projeto
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/cauafernandess/android-crypto-monitor.git
+
 
 
