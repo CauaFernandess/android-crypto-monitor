@@ -18,7 +18,8 @@ Além disso, explora conceitos de **programação reativa**, **arquitetura limpa
 ## 👥 Membros da Equipe
 
 - **Cauã Fernandes** – RM551765  
-- **Bruno De Castro Granado** – RM551411  
+- **Bruno De Castro Granado** – RM551411
+- **Felipe Pereira Meschiatti** - RM551978
 
 ---
 
